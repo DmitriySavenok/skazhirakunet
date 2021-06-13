@@ -91,3 +91,113 @@ h6 {
 }
 
 /*--------------------*/
+
+/**/
+
+/**/
+
+/**/
+
+/**/
+
+.header {
+  height: 90px;
+  display: grid;
+  grid-template-columns: 25%;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+}
+
+.logo {
+  padding: 15px;
+  grid-column-start: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90px;
+  background-color: white;
+}
+
+.header__logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.info {
+  grid-column-start: 2;
+}
+
+.header__contacts {
+  width: 100%;
+  height: 50%;
+  background-color: #539DA6;
+}
+
+.header__navigation {
+  width: 100%;
+  height: 50%;
+  line-height: 45px;
+  background-color: white;
+}
+
+.header__navigation ul {
+  float: left;
+}
+
+.header__navigation ul li {
+  display: inline;
+}
+
+.header__navigation a {
+  padding: 13px 14px;
+  color: #656565;
+}
+
+.header__navigation a:hover {
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  color: #539DA6;
+  background-color: #f2f2f2;
+}
+
+.header__help-buttons {
+  float: right;
+}
+
+.need-help-btn {
+  padding: 14px 14px;
+  background-color: white;
+}
+
+.need-help-btn:hover {
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  color: #539DA6;
+  background-color: #f2f2f2;
+}
+
+.help-btn {
+  padding: 14px 14px;
+  color: white;
+  background-color: #57B092;
+}
+
+.help-btn:hover {
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background-color: #42a081;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

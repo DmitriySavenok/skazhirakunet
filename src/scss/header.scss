@@ -1,0 +1,81 @@
+.header {
+    height: 90px;
+    display: grid;
+    grid-template-columns: 25%;
+    background-color: white;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0, 0.12));
+}
+
+.logo {
+    padding: 15px;
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: white;
+}
+
+.header__logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    grid-column-start: 2;
+}
+
+.header__contacts {
+    width: 100%;
+    height: 50%;
+    background-color: $background-color;
+}
+
+.header__navigation {
+    width: 100%;
+    height: 50%;
+    line-height: 45px;
+    background-color: white;
+}
+
+.header__navigation ul {
+    float: left;
+}
+
+.header__navigation ul li {
+    display: inline;
+}
+
+.header__navigation a {
+    padding: 13px 14px;
+    color: $text-color-dark;
+    &:hover {
+        transition-duration: 0.2s;
+        color: $background-color;
+        background-color: #f2f2f2
+    }
+}
+
+.header__help-buttons {
+    float: right;
+}
+
+.need-help-btn {
+    padding: 14px 14px;
+    background-color: white;
+    &:hover {
+        transition-duration: 0.2s;
+        color: $background-color;
+        background-color: #f2f2f2
+    }
+}
+
+.help-btn {
+    padding: 14px 14px;
+    color: white;
+    background-color: $help-btn-color;
+    &:hover {
+        transition-duration: 0.2s;
+        background-color: $help-btn-color-hover;
+    }
+}
