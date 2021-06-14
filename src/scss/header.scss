@@ -1,4 +1,4 @@
-.header {
+.header-descktop {
     height: 90px;
     display: grid;
     grid-template-columns: 25%;
@@ -26,15 +26,60 @@
 }
 
 .header__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50%;
     background-color: $background-color;
 }
 
+.header__contacts img {
+    height: 14px;
+    margin-right: 8px;
+}
+
+.header__vk-icon {
+    padding-top: 1px;
+    height: 12px !important;
+}
+
+.header__contacts ul li{
+    vertical-align: middle;
+    display: inline;
+}
+
+.header__contacts ul a {
+    margin-right: 62px;
+    color: white;
+}
+
+.header__contacts a:hover {
+    transition-duration: 0.2s;
+    text-decoration: underline;
+}
+
+.header__contacts a:first-child {
+    margin-left: 16px;
+}
+
+.english-version-btn {
+    float: right;
+    padding: 0 16px;
+    margin-right: 0;
+    color: white;
+}
+
 .header__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 50%;
-    line-height: 45px;
     background-color: white;
 }
 
@@ -58,6 +103,7 @@
 
 .header__help-buttons {
     float: right;
+    font-size: 0;
 }
 
 .need-help-btn {

@@ -100,7 +100,7 @@ h6 {
 
 /**/
 
-.header {
+.header-descktop {
   height: 90px;
   display: grid;
   grid-template-columns: 25%;
@@ -135,15 +135,82 @@ h6 {
 }
 
 .header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 50%;
   background-color: #539DA6;
 }
 
+.header__contacts img {
+  height: 14px;
+  margin-right: 8px;
+}
+
+.header__vk-icon {
+  padding-top: 1px;
+  height: 12px !important;
+}
+
+.header__contacts ul li {
+  vertical-align: middle;
+  display: inline;
+}
+
+.header__contacts ul a {
+  margin-right: 62px;
+  color: white;
+}
+
+.header__contacts a:hover {
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  text-decoration: underline;
+}
+
+.header__contacts a:first-child {
+  margin-left: 16px;
+}
+
+.english-version-btn {
+  float: right;
+  padding: 0 16px;
+  margin-right: 0;
+  color: white;
+}
+
 .header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 50%;
-  line-height: 45px;
   background-color: white;
 }
 
@@ -170,6 +237,7 @@ h6 {
 
 .header__help-buttons {
   float: right;
+  font-size: 0;
 }
 
 .need-help-btn {
