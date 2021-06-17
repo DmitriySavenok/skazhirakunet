@@ -1,4 +1,4 @@
-.header-descktop {
+.header-desktop {
     height: 90px;
     display: grid;
     grid-template-columns: 25%;
@@ -37,28 +37,37 @@
 }
 
 .header__contacts img {
-    height: 14px;
+    padding-top: 1px;
+    height: 13px;
     margin-right: 8px;
 }
 
 .header__vk-icon {
-    padding-top: 1px;
+    padding-top: 3px !important;
     height: 12px !important;
 }
 
-.header__contacts ul li{
+.header__contacts ul li {
     vertical-align: middle;
     display: inline;
 }
 
-.header__contacts ul a {
+.header__contacts li a {
     margin-right: 62px;
+}
+
+.header__contacts a {
     color: white;
+    text-decoration: none;
+    background-image: linear-gradient( white,white);
+    background-position: 0% 110%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
 }
 
 .header__contacts a:hover {
-    transition-duration: 0.2s;
-    text-decoration: underline;
+    background-size: 100% 2px;
 }
 
 .header__contacts a:first-child {
@@ -67,8 +76,7 @@
 
 .english-version-btn {
     float: right;
-    padding: 0 16px;
-    margin-right: 0;
+    margin-right: 16px;
     color: white;
 }
 
