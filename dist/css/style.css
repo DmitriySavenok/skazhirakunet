@@ -384,13 +384,15 @@ body {
   }
 }
 
+@media (max-width: 938px) {
+  .header-mobile {
+    display: grid;
+  }
+}
+
 @media (max-width: 935px) {
   .header-desktop {
     display: none;
-  }
-
-  .header-mobile {
-    display: grid;
   }
 }
 
