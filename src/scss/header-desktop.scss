@@ -142,7 +142,7 @@
 /* Dropdown button */
 
 .btn {
-    padding: 16px;
+    padding: 15px;
     &:hover svg {
         fill: $background-color;
     }
@@ -179,7 +179,7 @@
 
 /* Adaptation */
 
-@media (max-width: 1267px) {
+@media (max-width: 1280px) {
     .hide {
         display: none;
     }
@@ -190,7 +190,7 @@
 
 }
 
-@media (max-width: 1057px) {
+@media (max-width: 1061px) {
     .header__contacts li a {
         margin-right: 31px;
     }
@@ -200,7 +200,7 @@
     }
 }
 
-@media (max-width: 935px) {
+@media (max-width: 937px) {
     .header-desktop {
         display: none;
     }
