@@ -1,0 +1,43 @@
+.header-mobile {
+    display: none;
+    grid-template-columns: auto 10%;
+    background-color: white;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0, 0.12));
+}
+
+.logo-mobile {
+    padding: 15px;
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.header__logo-mobile {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-mobile-btn {
+    background-color: $background-color;
+}
+
+.header-mobile-btn svg {
+    fill: white;
+}
+
+
+
+/* Adaptation */
+
+@media (max-width: 935px) {
+    .header-mobile {
+        display: grid;
+    }
+}
+
+@media (max-width: 625px) {
+    .header-mobile {
+        grid-template-columns: auto 15%;
+    }
+}
