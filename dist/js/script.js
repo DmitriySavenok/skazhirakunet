@@ -15,3 +15,12 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+function headerMobileMenuToggleShow() {
+    var element = document.getElementById("header-mobile-toggle");
+    var burgerIcon = document.getElementById("icon-burger");
+    var closeIcon = document.getElementById("icon-close");
+    element.classList.toggle("header-mobile-toggle-show");
+    burgerIcon.classList.toggle("icon-burger-hide");
+    closeIcon.classList.toggle("icon-close-show");
+ }

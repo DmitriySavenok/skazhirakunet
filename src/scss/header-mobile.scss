@@ -26,7 +26,44 @@
     fill: white;
 }
 
+.header-mobile-toggle {
+    display: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: $background-color;
+}
 
+.header-mobile-toggle-show {
+    display: grid;
+}
+
+.header-mobile-toggle a {
+    color: $text-color-dark;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.header-mobile-toggle img {
+    margin-right: 8px;
+}
+
+.header-mobile__vk-icon {
+    padding-top: 2px !important;
+    height: 13px !important;
+}
+
+.icon-burger-hide {
+    display: none;
+}
+
+.icon-close-hide {
+    display: none;
+}
+
+.icon-close-show {
+    display: inline-block;
+}
 
 /* Adaptation */
 
