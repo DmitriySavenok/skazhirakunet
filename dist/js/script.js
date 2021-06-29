@@ -24,3 +24,10 @@ function headerMobileMenuToggleShow() {
     burgerIcon.classList.toggle("icon-burger-hide");
     closeIcon.classList.toggle("icon-close-show");
  }
+
+ $(document).ready(function(){
+     $('.screen-carousel').slick({
+         arrows: false,
+         dots: true
+     });
+ });

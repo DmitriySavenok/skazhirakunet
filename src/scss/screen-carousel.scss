@@ -1,0 +1,87 @@
+.first-screen {
+    position: relative;
+    z-index: 1;
+}
+
+.screen-carousel__item {
+    height: 400px;
+}
+
+.sms-slide {
+    background-image: url(../img/screen-carousel/sms-screen-bg.jpg);
+    background-size: 700px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.qr-slide {
+    background-color: lightcoral;
+}
+
+.info-slide {
+    background-color: lightskyblue;
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.screen-carousel .slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.screen-carousel .slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.screen-carousel .slick-dots {
+    position: absolute;
+    top: 360px;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.screen-carousel .slick-dots li {
+    margin: 0 10px;
+    font-size: 0px;
+}
+
+/* Элемент точки */
+.screen-carousel .slick-dots li button {
+    width: 35px;
+    height: 4px;
+    background-color: #c9c9c9;
+    border: none;
+    cursor: pointer;
+}
+
+/* Активная точка */
+.screen-carousel .slick-active button {
+    background-color: $background-color !important;
+}

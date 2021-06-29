@@ -20,6 +20,11 @@
 
 .header-mobile-btn {
     background-color: $background-color;
+    border: none;
+    &:active, 
+    &:focus {
+        outline: none;
+    }
 }
 
 .header-mobile-btn svg {
@@ -67,7 +72,7 @@
 
 /* Adaptation */
 
-@media (max-width: 937px) {
+@media (max-width: 1172px) {
     .header-mobile {
         display: grid;
     }
