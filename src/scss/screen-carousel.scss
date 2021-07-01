@@ -4,16 +4,9 @@
 }
 
 .screen-carousel__item {
-    height: 400px;
+    height: 350px;
 }
 
-.qr-slide {
-    background-color: lightcoral;
-}
-
-.info-slide {
-    background-color: lightskyblue;
-}
 
 /* Слайдер */
 .slick-slider{}
@@ -51,7 +44,7 @@
 /* Точки (булиты) */
 .screen-carousel .slick-dots {
     position: absolute;
-    top: 360px;
+    top: 310px;
     z-index: 2;
     left: 50%;
     transform: translate(-50%);
@@ -84,4 +77,13 @@
 .screen-carousel .slick-active button {
     background-color: $background-color !important;
     opacity: 100% !important;
+}
+
+@media (max-width: 414px) {
+
+    .screen-carousel .slick-dots {
+        top: 500px;
+        left: 40%;
+        transform: translate(-40%);
+    }
 }

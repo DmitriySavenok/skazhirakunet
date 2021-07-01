@@ -18,6 +18,8 @@
 @import "header-mobile";
 @import "screen-carousel";
 @import "sms-slide-carousel";
+@import "qr-slide-carousel";
+@import "volunteer-slide-carousel";
 @import "slogan";
 
 body {
@@ -25,6 +27,7 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     padding: 20px;
 }
 

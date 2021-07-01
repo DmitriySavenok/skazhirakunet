@@ -70,6 +70,20 @@
     display: inline-block;
 }
 
+.english-vers-btn-mobile {
+    background-color: $background-color-hover;
+}
+
+.need-help-btn-mobile {
+    background-color: white;
+    color: $background-color !important;
+}
+
+.help-btn-mobile {
+    background-color: $help-btn-color;
+    color: white !important;
+}
+
 /* Adaptation */
 
 @media (max-width: 1172px) {

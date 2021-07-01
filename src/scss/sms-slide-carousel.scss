@@ -13,11 +13,35 @@
 
 .sms-slide p {
     color: $text-color-dark;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 65px;
 }
 
 .color_text {
     color: $background-color;
     text-transform: uppercase;
+}
+
+@media (min-width: 1440px) {
+    .sms-slide {
+        background-size: 850px;
+        background-position: center right;
+    }
+}
+
+@media (max-width: 414px) {
+    .sms-slide {
+        background-size: 350px;
+        background-position: top right;
+        padding-top: 200px;
+    }
+
+    .sms-slide p {
+        font-size: 1em;
+        margin-bottom: 45px;
+    }
+
+    .sms-slide h2 {
+        font-size: 1.5em;
+    }
 }
