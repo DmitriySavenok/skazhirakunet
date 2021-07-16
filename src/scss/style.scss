@@ -14,12 +14,10 @@
 @import "fonts";
 @import "vars";
 
-@import "header-desktop";
+
 @import "header-mobile";
-@import "screen-carousel";
-@import "sms-slide-carousel";
-@import "qr-slide-carousel";
-@import "volunteer-slide-carousel";
+@import "header-desktop";
+@import "carousel-screen";
 @import "slogan";
 
 body {
@@ -27,18 +25,35 @@ body {
 }
 
 .container {
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-.usual-btn {
+.usual-button {
     color: $background-color;
     text-decoration: none;
     border: 1px solid $background-color;
-    padding: 14px 15px;
+    height: 45px;
+    padding-left: 14px;
+    padding-right: 14px;
     &:hover {
         color: white;
         background-color: $background-color;
+        transition-duration: 0.5s;
+    }
+}
+
+.help-button {
+    text-decoration: none;
+    color: white;
+    background-color: $help-btn-color;
+    height: 45px;
+    padding-left: 14px;
+    padding-right: 14px;
+    &:hover {
+        color: white;
+        background-color: $help-btn-color-hover;
         transition-duration: 0.5s;
     }
 }

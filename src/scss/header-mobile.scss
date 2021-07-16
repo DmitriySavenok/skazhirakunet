@@ -1,99 +1,91 @@
+/* -- header-mobile -- */
 .header-mobile {
+    height: 80px;
     display: none;
-    grid-template-columns: auto 10%;
+    grid-template-columns: auto 15%;
+    align-items: center;
     background-color: white;
     filter: drop-shadow(0px 4px 6px rgba(0,0,0, 0.12));
 }
 
-.logo-mobile {
-    padding: 15px;
-    grid-column-start: 1;
-    display: flex;
-    align-items: center;
-    background-color: white;
+.header-logo {
+    padding-left: 20px;
 }
 
-.header__logo-mobile {
-    max-width: 100%;
+.header-logo img {
+    max-width: 90%;
     height: auto;
 }
 
-.header-mobile-btn {
-    background-color: $background-color;
-    border: none;
-    &:active, 
-    &:focus {
-        outline: none;
-    }
+.header-mobile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: $background-color;
 }
 
-.header-mobile-btn svg {
+.header-mobile-button {
+    border: none;
+}
+
+.header-mobile-button:active, 
+.header-mobile-button:focus {
+    outline: none;
+}
+
+.header-mobile-button svg {
+    height: 20px;
+    width: auto;
     fill: white;
 }
 
-.header-mobile-toggle {
-    display: none;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: $background-color;
-}
-
-.header-mobile-toggle-show {
-    display: grid;
-}
-
-.header-mobile-toggle a {
-    color: $text-color-dark;
-    padding: 16px 16px;
-    text-decoration: none;
-    color: white;
-}
-
-.header-mobile-toggle img {
-    margin-right: 8px;
-}
-
-.header-mobile__vk-icon {
-    padding-top: 2px !important;
-    height: 13px !important;
-}
-
-.icon-burger-hide {
+.burger-icon-hide {
     display: none;
 }
 
-.icon-close-hide {
+.close-icon {
     display: none;
 }
 
-.icon-close-show {
+.close-icon-show {
     display: inline-block;
 }
 
-.english-vers-btn-mobile {
+.header-mobile-menu {
+    display: none;
+}
+
+.header-mobile-menu-show {
+    display: inherit;
+    grid-column: 1 / 3;
+    background-color: $background-color;
+}
+
+.header-mobile-menu-show a {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.header-mobile__help-button {
+    background-color: $help-btn-color;
+}
+
+.header-mobile__english-button {
     background-color: $background-color-hover;
 }
 
-.need-help-btn-mobile {
+.header-mobile__need-help-button {
     background-color: white;
-    color: $background-color !important;
+    color: $text-color-dark !important;
 }
 
-.help-btn-mobile {
-    background-color: $help-btn-color;
-    color: white !important;
-}
-
-/* Adaptation */
-
-@media (max-width: 1172px) {
-    .header-mobile {
-        display: grid;
-    }
-}
-
-@media (max-width: 625px) {
-    .header-mobile {
-        grid-template-columns: auto 15%;
-    }
+.header-mobile-menu svg {
+    height: 1em;
+    margin-right: 8px;
+    fill: white;
 }

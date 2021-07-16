@@ -17,17 +17,17 @@ testWebP(function (support) {
 });
 
 function headerMobileMenuToggleShow() {
-    var element = document.getElementById("header-mobile-toggle");
-    var burgerIcon = document.getElementById("icon-burger");
-    var closeIcon = document.getElementById("icon-close");
-    element.classList.toggle("header-mobile-toggle-show");
-    burgerIcon.classList.toggle("icon-burger-hide");
-    closeIcon.classList.toggle("icon-close-show");
+    var element = document.getElementById("header-mobile-menu");
+    var burgerIcon = document.getElementById("burger-icon");
+    var closeIcon = document.getElementById("close-icon");
+    element.classList.toggle("header-mobile-menu-show");
+    burgerIcon.classList.toggle("burger-icon-hide");
+    closeIcon.classList.toggle("close-icon-show");
  }
 
  $(document).ready(function(){
-     $('.screen-carousel').slick({
-         arrows: false,
-         dots: true
-     });
- });
+    $('.carousel-screen__slider').slick({
+        arrows:false,
+        dots:true
+    });
+});

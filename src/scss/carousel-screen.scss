@@ -1,12 +1,18 @@
-.first-screen {
-    position: relative;
-    z-index: 1;
-}
-
-.screen-carousel__item {
+.carousel-screen__slider-item {
     height: 350px;
 }
 
+.sms-slide {
+    background-color: salmon;
+}
+
+.qr-slide {
+    background-color: skyblue;
+}
+
+.volunteer-slide {
+    background-color: teal;
+}
 
 /* Слайдер */
 .slick-slider{}
@@ -15,11 +21,11 @@
 /* Слайдер с точками */
 .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
-.screen-carousel .slick-list {
+.carousel-screen .slick-list {
     overflow: hidden;
 }
 /* Лента слайдов */
-.screen-carousel .slick-track{
+.carousel-screen .slick-track{
     display: flex;
 }
 /* Слайд */
@@ -41,49 +47,44 @@
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 
+
 /* Точки (булиты) */
-.screen-carousel .slick-dots {
-    position: absolute;
-    top: 310px;
-    z-index: 2;
-    left: 50%;
-    transform: translate(-50%);
+.carousel-screen .slick-dots {
+    position: relative;
+    top: -40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
-}
-.screen-carousel .slick-dots li {
-    margin: 0 15px;
-    font-size: 0px;
 }
 
-/* Элемент точки */
-.screen-carousel .slick-dots li button {
-    width: 40px;
-    height: 3px;
-    background-color: $text-color-dark;
-    opacity: 30%;
-    border: none;
-    cursor: pointer;
-    &:hover {
-        
-        margin: 0 10px;
-        transition: all .3s ease;
-    }
+.carousel-screen .slick-dots li {
+    list-style: none;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* Активная точка */
-.screen-carousel .slick-active button {
-    background-color: $background-color !important;
-    opacity: 100% !important;
+.carousel-screen .slick-dots li.slick-active {
+
 }
 
-@media (max-width: 414px) {
+/* Элемент точки */
+.carousel-screen .slick-dots li button {
+    border: none;
+    background-color: $background-color;
+    opacity: 30%;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    padding: 2px 20px;
+}
 
-    .screen-carousel .slick-dots {
-        top: 500px;
-        left: 40%;
-        transform: translate(-40%);
-    }
+.carousel-screen .slick-dots li.slick-active button {
+    opacity: 100%;
+}
+
+.carousel-screen .slick-dots li button:active,
+.carousel-screen .slick-dots li button:focus {
+   outline: none;
 }
