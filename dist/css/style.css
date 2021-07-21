@@ -900,11 +900,11 @@ header {
 /* Volunteer-slide */
 
 .no-webp .volunteer-slide{
-  background-image: url(../img/portrait-of-young-blonde-woman-in-white-t-shirt.png); }
+  background-image: url(../img/volunteer-slide-background.png); }
 
 .volunteer-slide {
-  background-position: 100% 1.5em;
-  background-size: 550px;
+  background-position: 93% 1em;
+  background-size: 350px;
   background-repeat: no-repeat;
 }
 
@@ -1000,7 +1000,8 @@ body {
 
 p,
 a,
-h2 {
+h2,
+ol {
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -1095,4 +1096,4 @@ h2 {
 
 .webp .sms-slide{ background-image: url(../img/sms-slide-background.webp); }
 
-.webp .volunteer-slide{ background-image: url(../img/portrait-of-young-blonde-woman-in-white-t-shirt.webp); }
+.webp .volunteer-slide{ background-image: url(../img/volunteer-slide-background.webp); }
