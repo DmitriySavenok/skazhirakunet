@@ -31,3 +31,13 @@ function headerMobileMenuToggleShow() {
         dots:true
     });
 });
+
+$(function(){
+    if ( $(window).width() < 768) {
+        var ind = 2;
+        $('.carousel-screen__slider').slick('slickRemove', ind-1);
+    }
+    if ( $(window).width() > 768) {
+        $('.carousel-screen__slider').slick('slickAdd', ind-1);
+    }
+});

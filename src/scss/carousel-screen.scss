@@ -1,7 +1,3 @@
-.carousel-screen__slider-item {
-    height: 350px;
-}
-
 /* Слайдер */
 .slick-slider{}
 /* Слайдер запущен */
@@ -39,7 +35,7 @@
 /* Точки (булиты) */
 .carousel-screen .slick-dots {
     position: relative;
-    top: -55px;
+    top: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,24 +74,38 @@
 }
 
 /* Common styles */
+.carousel-screen__slider-item {
+    height: 350px;
+}
+
+.slide-content {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .carousel-screen h2 {
     color: $background-color;
     font-size: 2.3em;
     font-weight: normal;
+    flex: 0 0 auto;
 }
 
 .carousel-screen p {
     color: $text-color-dark;
     font-size: 1.2em;
-    margin: 3em 0;
+    flex: 1 0 auto;
+}
+
+.carousel-screen .usual-button {
+    flex: 0 0 auto;
+    margin-bottom: 3em;
 }
 
 /* SMS-slide */
 
 .sms-slide {
-    padding-top: 1em;
-
     background-image: url(../img/sms-slide-background.png);
     background-position: 90% 50%;
     background-size: 300px;
@@ -118,11 +128,10 @@
     color: $text-color-dark;
     font-size: 1.2em;
     padding-left: 1em;
-    margin-bottom: 2.5em;
 }
 
 .qr-code-info li {
-    margin-bottom: 6px;
+    margin: 6px 0;
 }
 
 .qr-code {
@@ -144,4 +153,10 @@
     background-position: 93% 1em;
     background-size: 350px;
     background-repeat: no-repeat;
+}
+
+/* Adaptation */
+
+@media (max-width: 768px) {
+    
 }
