@@ -783,6 +783,7 @@ header {
 .carousel-screen .slick-dots {
   position: relative;
   top: -50px;
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,7 +895,7 @@ header {
 
 .sms-slide {
   background-position: 90% 50%;
-  background-size: 300px;
+  background-size: 270px;
   background-repeat: no-repeat;
 }
 
@@ -948,6 +949,12 @@ header {
 }
 
 /* Adaptation */
+
+/* Smartphones */
+
+/* Table 481-768 */
+
+/* Table 768-1238 */
 
 .slogan {
   color: #656565;
@@ -1135,6 +1142,56 @@ ol {
   }
 }
 
+@media (max-width: 480px) {
+  .carousel-screen .slick-dots {
+    padding-right: 25px;
+  }
+
+  .carousel-screen h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .carousel-screen p {
+    font-size: 1em;
+  }
+
+  .no-webp .sms-slide{
+    background-image: url(../img/sms-operators-background.png); }
+
+  .sms-slide {
+    background-position: 50% 60%;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sms-slide {
+    background-position: 90% 60%;
+    background-size: 170px;
+  }
+
+  .carousel-screen h2 {
+    font-size: 2em;
+  }
+
+  .carousel-screen p {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1238px) {
+  .sms-slide {
+    background-position: 90% 70%;
+    background-size: 200px;
+  }
+}
+
 .webp .sms-slide{ background-image: url(../img/sms-slide-background.webp); }
 
 .webp .volunteer-slide{ background-image: url(../img/volunteer-slide-background.webp); }
+
+@media (max-width: 480px){
+
+  .webp .sms-slide{ background-image: url(../img/sms-operators-background.webp); }
+}

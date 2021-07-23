@@ -36,6 +36,7 @@
 .carousel-screen .slick-dots {
     position: relative;
     top: -50px;
+    padding-left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +123,7 @@
 .sms-slide {
     background-image: url(../img/sms-slide-background.png);
     background-position: 90% 50%;
-    background-size: 300px;
+    background-size: 270px;
     background-repeat: no-repeat;
 }
 
@@ -170,3 +171,49 @@
 }
 
 /* Adaptation */
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .carousel-screen .slick-dots {
+        padding-right: 25px;
+    }
+
+    .carousel-screen h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+
+    .carousel-screen p {
+        font-size: 1em;
+    }
+
+    .sms-slide {
+        background-image: url(../img/sms-operators-background.png);
+        background-position: 50% 60%;
+        background-size: contain;
+    }
+}
+
+/* Table 481-768 */
+@media (min-width: 481px) and (max-width: 768px) {
+    .sms-slide {
+        background-position: 90% 60%;
+        background-size: 170px;
+    }
+
+    .carousel-screen h2 {
+        font-size: 2em;
+    }
+
+    .carousel-screen p {
+        font-size: 1.3em;
+    }
+}
+
+/* Table 768-1238 */
+@media (min-width: 768px) and (max-width: 1238px) {
+    .sms-slide {
+        background-position: 90% 70%;
+        background-size: 200px;
+    }
+}
