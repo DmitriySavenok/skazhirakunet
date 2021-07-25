@@ -63,11 +63,10 @@
     height: 20px;
     padding: 5px;
     cursor: pointer;
-    color: $background-color;
     border: none;
     outline: 0;
-    background: transparent;
-    opacity: 30%;
+    background: none;
+    color: rgba(83, 157, 166, 0.3);
     &::before {
         font-size: 30px;
         line-height: 20px;
@@ -75,12 +74,11 @@
         height: 20px;
         content: "—";
         text-align: center;
-        color: $background-color;
     }
 }
 
 .carousel-screen .slick-dots li.slick-active button {
-    opacity: 100%;
+    color: rgba(83, 157, 166, 1);
 }
 
 .carousel-screen .slick-dots li button:active,

@@ -818,11 +818,10 @@ header {
   height: 20px;
   padding: 5px;
   cursor: pointer;
-  color: #539DA6;
   border: none;
   outline: 0;
-  background: transparent;
-  opacity: 30%;
+  background: none;
+  color: rgba(83, 157, 166, 0.3);
 }
 
 .carousel-screen .slick-dots li button::before {
@@ -832,11 +831,10 @@ header {
   height: 20px;
   content: "—";
   text-align: center;
-  color: #539DA6;
 }
 
 .carousel-screen .slick-dots li.slick-active button {
-  opacity: 100%;
+  color: #539da6;
 }
 
 .carousel-screen .slick-dots li button:active,
