@@ -1163,6 +1163,18 @@ ol {
     background-position: 50% 60%;
     background-size: contain;
   }
+
+  .volunteer-slide {
+    background-image: none !important;
+  }
+
+  .volunteer-slide h2 {
+    width: 320px;
+  }
+
+  .volunteer-slide p {
+    width: 320px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -1173,6 +1185,23 @@ ol {
 
   .carousel-screen h2 {
     font-size: 2em;
+  }
+
+  .no-webp .volunteer-slide{
+    background-image: url(../img/volunteer-slide-background.png); }
+
+  .volunteer-slide {
+    background-position: 98% 1.5em;
+    background-size: 225px;
+    background-repeat: no-repeat;
+  }
+
+  .volunteer-slide h2 {
+    width: 330px;
+  }
+
+  .volunteer-slide p {
+    width: 350px;
   }
 }
 
@@ -1193,6 +1222,14 @@ ol {
   .qr-code-info ol {
     margin-top: 0;
   }
+
+  .volunteer-slide h2 {
+    width: 530px;
+  }
+
+  .volunteer-slide p {
+    width: 380px;
+  }
 }
 
 .webp .sms-slide{ background-image: url(../img/sms-slide-background.webp); }
@@ -1202,4 +1239,9 @@ ol {
 @media (max-width: 480px){
 
   .webp .sms-slide{ background-image: url(../img/sms-operators-background.webp); }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+
+  .webp .volunteer-slide{ background-image: url(../img/volunteer-slide-background.webp); }
 }

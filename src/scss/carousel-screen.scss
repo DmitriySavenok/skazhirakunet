@@ -192,6 +192,18 @@
         background-position: 50% 60%;
         background-size: contain;
     }
+
+    .volunteer-slide {
+        background-image: none !important;
+    }
+
+    .volunteer-slide h2 {
+        width: 320px;
+    }
+
+    .volunteer-slide p {
+        width: 320px;
+    }
 }
 
 /* Table 481-768 */
@@ -203,6 +215,21 @@
 
     .carousel-screen h2 {
         font-size: 2em;
+    }
+
+    .volunteer-slide {
+        background-image: url(../img/volunteer-slide-background.png);
+        background-position: 98% 1.5em;
+        background-size: 225px;
+        background-repeat: no-repeat;
+    }
+
+    .volunteer-slide h2 {
+        width: 330px;
+    }
+
+    .volunteer-slide p {
+        width: 350px;
     }
 }
 
@@ -224,5 +251,13 @@
 
     .qr-code-info ol{
         margin-top: 0;
+    }
+
+    .volunteer-slide h2 {
+        width: 530px;
+    }
+
+    .volunteer-slide p {
+        width: 380px;
     }
 }
