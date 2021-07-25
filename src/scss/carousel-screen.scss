@@ -204,10 +204,6 @@
     .carousel-screen h2 {
         font-size: 2em;
     }
-
-    .carousel-screen p {
-        font-size: 1.3em;
-    }
 }
 
 /* Table 768-1238 */
@@ -215,5 +211,18 @@
     .sms-slide {
         background-position: 90% 70%;
         background-size: 200px;
+    }
+
+    
+    .qr-slide__content {
+        grid-template-columns: 70% 30%;
+    }
+
+    .qr-code img {
+        height: 170px;
+    }
+
+    .qr-code-info ol{
+        margin-top: 0;
     }
 }
