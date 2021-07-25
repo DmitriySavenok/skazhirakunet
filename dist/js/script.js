@@ -28,7 +28,9 @@ function headerMobileMenuToggleShow() {
  $(document).ready(function(){
     $('.carousel-screen__slider').slick({
         arrows:false,
-        dots:true
+        dots:true,
+        autoplay:true,
+        draggable:false
     });
 });
 
