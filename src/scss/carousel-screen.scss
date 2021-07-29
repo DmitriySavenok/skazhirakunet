@@ -64,8 +64,9 @@
     padding: 5px;
     cursor: pointer;
     border: none;
-    outline: 0;
+    outline: none;
     background: none;
+    -webkit-tap-highlight-color: transparent;
     color: rgba(83, 157, 166, 0.3);
     &::before {
         font-size: 30px;
