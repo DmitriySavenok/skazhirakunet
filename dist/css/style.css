@@ -1199,6 +1199,17 @@ ol {
   }
 }
 
+@media (max-width: 1119px) {
+  .how-we-help__grid {
+    display: block;
+  }
+
+  .how-we-help__item {
+    min-height: 120px;
+    margin-bottom: 1em;
+  }
+}
+
 @media (max-width: 900px) {
   .corner-box-1 {
     width: 90%;
@@ -1317,7 +1328,7 @@ ol {
   }
 
   .how-we-help__item {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
   }
 }
 

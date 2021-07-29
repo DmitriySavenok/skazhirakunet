@@ -67,9 +67,20 @@
     }
 }
 
+@media (max-width: 1119px) {
+    .how-we-help__grid {
+        display: block;
+    }
+
+    .how-we-help__item {
+        min-height: 120px;
+        margin-bottom: 1em;
+    }
+}
+
 /* Table 768-1238 */
 @media (min-width: 768px) and (max-width: 1238px) {
     .how-we-help__item {
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 25% 75%;
     }
 }
