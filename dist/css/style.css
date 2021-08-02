@@ -1290,6 +1290,22 @@ ol,
   color: #539DA6;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(83, 157, 166, 0.3);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3b8892;
+}
+
 @media (min-width: 1342px) {
   .dropdown {
     display: none;
