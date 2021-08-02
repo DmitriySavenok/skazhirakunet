@@ -1,0 +1,101 @@
+.how-you-can-help {
+    height: 450px;
+}
+
+.how-you-can-help__grid {
+    display: grid;
+    grid-template-columns: 195px 195px 195px 195px 195px 195px;
+    justify-content: space-between;
+}
+
+.how-you-can-help__item {
+    padding: 1em;
+    height: 230px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0, 0.12));
+    &:hover {
+        background-color: $background-color;
+        height: 280px;
+        transition-duration: 0.5s;
+    }
+}
+
+.how-you-can-help__item:hover .item-icon svg {
+    fill: white;
+    transition-duration: 0.5s;
+}
+
+.how-you-can-help__item:hover h3, .how-you-can-help__item:hover .arrow-down-icon{
+    display: none;
+}
+
+.how-you-can-help__item:hover .item-info, .how-you-can-help__item:hover .item-button {
+    display: inherit;
+    transition-duration: 0.5s;
+}
+
+.how-you-can-help .item-icon {
+    margin-top: 1em;
+    height: 60px;
+    text-align: center;
+}
+
+.how-you-can-help .item-icon svg {
+    fill: $background-color;
+}
+
+.card-icon {
+    margin-top: 1.15em;
+}
+
+.item-title h3 {
+    color: $background-color;
+    text-align: center;
+    height: 80px;
+}
+
+.arrow-down-icon {
+    text-align: center;
+}
+
+.arrow-down-icon svg {
+    height: 1em;
+    fill: $background-color;
+}
+
+.how-you-can-help .item-info {
+    display: none;
+    text-align: center;
+}
+
+.how-you-can-help .item-info p {
+    padding-top: 1em;
+    height: 90px;
+    color: white;
+}
+
+.share-item .item-info p {
+    height: 100px;
+}
+
+.item-button {
+    display: none;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.item-button a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 14px;
+    &:hover {
+        color: $background-color;
+        background-color: white;
+        transition-duration: 0.5s;
+    }
+}
+
+.volunteer-item .item-icon svg, .share-item .item-icon svg  {
+    height: 72px;
+}
