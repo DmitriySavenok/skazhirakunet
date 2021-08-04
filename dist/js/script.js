@@ -37,7 +37,24 @@ function headerMobileMenuToggleShow() {
 $(document).ready(function(){
     $('.they-need-your-help__slider').slick({
         appendArrows: ('.slider-navigation-button'),
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+              breakpoint: 1048,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 689,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
 });
 
