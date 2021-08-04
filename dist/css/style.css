@@ -676,6 +676,11 @@ header {
           transition-duration: 0.5s;
 }
 
+.header-desktop .help-button {
+  height: 45px !important;
+  padding: 0 14px;
+}
+
 /* Header dropdown menu */
 
 .hide-menu {
@@ -739,14 +744,6 @@ header {
 
 /* Adaptation */
 
-/* Слайдер */
-
-/* Слайдер запущен */
-
-/* Слайдер с точками */
-
-/* Ограничивающая оболочка */
-
 .carousel-screen .slick-list {
   overflow: hidden;
 }
@@ -758,24 +755,6 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-
-/* Слайд */
-
-/* Слайд активный (показывается) */
-
-/* Слайд основной */
-
-/* Слайд по центру */
-
-/* Клонированный слайд */
-
-/* Стрелка */
-
-/* Стрелка влево */
-
-/* Стрелка вправо */
-
-/* Стрелка не активная */
 
 /* Точки (булиты) */
 
@@ -804,8 +783,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-
-/* Активная точка */
 
 /* Элемент точки */
 
@@ -1174,6 +1151,173 @@ header {
 
 /* Adaptation */
 
+.they-need-your-help {
+  padding-bottom: 3em;
+}
+
+.they-need-your-help .slider-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.they-need-your-help svg {
+  height: 1em;
+  fill: #539DA6;
+}
+
+.they-need-your-help button {
+  font-size: 0;
+  border: none;
+  height: 45px;
+  width: 45px;
+  opacity: 0.4;
+}
+
+.they-need-your-help button:hover {
+  opacity: 1;
+  border: 1px solid #539DA6;
+}
+
+/* Item style */
+
+.ward-item {
+  padding: 1em;
+  height: 490px;
+  width: 290px !important;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+}
+
+.ward-item__avatar {
+  text-align: center;
+}
+
+.ward-item__title h3 {
+  text-align: left;
+  color: #539DA6;
+  margin: 0.7em 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.progress-bar-fill {
+  display: block;
+  height: 1em;
+  background-color: #539DA6;
+  -webkit-transition: width 500ms ease-in-out;
+  -o-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.donation-info span {
+  font-weight: bold;
+}
+
+.ward-item__info p {
+  text-align: left;
+}
+
+.donation-info p {
+  text-align: left;
+  margin: 6px 0;
+}
+
+.ward-item__help-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 0;
+}
+
+.ward-item__link-more {
+  color: #656565;
+}
+
+.ward-item__link-more:visited {
+  color: #656565;
+}
+
+.they-need-your-help .button-block {
+  margin-top: 3em;
+  text-align: center;
+}
+
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.they-need-your-help__slider .slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.they-need-your-help__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 530px;
+}
+
+/* Слайд */
+
+.they-need-your-help__slider .slick-slide {
+  text-align: center;
+}
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+.slider-navigation-button .slick-arrow.slick-prev {
+  background: url(../img/icons/back.svg) 0 0 no-repeat;
+  background-position: center;
+}
+
+/* Стрелка вправо */
+
+.slider-navigation-button .slick-arrow.slick-next {
+  background: url(../img/icons/next.svg) 0 0 no-repeat;
+  background-position: center;
+}
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -1239,9 +1383,7 @@ ol,
   text-decoration: none;
   color: white;
   background-color: #57B092;
-  height: 45px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 14px;
 }
 
 .help-button:hover {
@@ -1254,6 +1396,10 @@ ol,
 
 .color-text {
   color: #539DA6;
+}
+
+.dark-text {
+  color: #656565;
 }
 
 body::-webkit-scrollbar {

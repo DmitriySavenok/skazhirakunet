@@ -34,6 +34,13 @@ function headerMobileMenuToggleShow() {
     });
 });
 
+$(document).ready(function(){
+    $('.they-need-your-help__slider').slick({
+        appendArrows: ('.slider-navigation-button'),
+        slidesToShow: 3
+    });
+});
+
 $(function(){
     if ( $(window).width() < 768) {
         var ind = 2;
