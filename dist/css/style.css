@@ -1320,9 +1320,67 @@ header {
 
 /* Точки (булиты) */
 
+.they-need-your-help__slider .slick-dots {
+  position: relative;
+  bottom: 1em;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.they-need-your-help__slider .slick-dots li {
+  list-style: none;
+  margin: 0px 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.they-need-your-help__slider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  color: rgba(83, 157, 166, 0.5);
+}
+
+.they-need-your-help__slider .slick-dots li button::before {
+  font-size: 30px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  content: "—";
+  text-align: center;
+}
+
+.they-need-your-help__slider .slick-dots li.slick-active button {
+  color: #539da6;
+}
+
 /* Активная точка */
 
 /* Элемент точки */
+
+/* Adaptation */
+
+/* Smartphones */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1408,6 +1466,8 @@ ol,
   color: #656565;
 }
 
+/* Scrollbar styles */
+
 body::-webkit-scrollbar {
   width: 6px;
 }
@@ -1423,6 +1483,43 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-color: #3b8892;
 }
+
+/* Button to top styles */
+
+.button-to-top {
+  padding: 14px;
+  border: 1px solid #539DA6;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 2em;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.button-to-top:hover {
+  color: white;
+  background-color: #539DA6;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button-to-top svg {
+  height: 1em;
+  fill: #539DA6;
+}
+
+.button-to-top:hover svg {
+  height: 1em;
+  fill: white;
+}
+
+/* Adaptation */
+
+/* Smartphones */
 
 @media (min-width: 1342px) {
   .dropdown {
@@ -1648,6 +1745,27 @@ body::-webkit-scrollbar-thumb:hover {
 
   .background-number span {
     font-size: 4em;
+  }
+
+  .they-need-your-help__slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 540px;
+  }
+
+  .ward-item {
+    height: 500px;
+    width: 240px !important;
+  }
+
+  .slider-navigation-button {
+    display: none;
+  }
+
+  .button-to-top {
+    bottom: 1em;
+    /* отступ кнопки от нижнего края страницы*/
   }
 }
 

@@ -91,6 +91,8 @@ p, a, h2, h3, ol, .background-number {
     color: $text-color-dark;
 }
 
+/* Scrollbar styles */
+
 body::-webkit-scrollbar {
     width: 6px;
 }
@@ -106,4 +108,44 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background-color: $background-color-hover;
 }
+
+/* Button to top styles */
+
+.button-to-top {
+    padding: 14px;
+    border: 1px solid $background-color;
+    background-color: white;
+    text-align:center;
+    position:fixed;
+    bottom: 2em; /* отступ кнопки от нижнего края страницы*/
+    right: 20px;
+    cursor:pointer;
+    display:none;
+    &:hover {
+        color: white;
+        background-color: $background-color;
+        transition-duration: 0.5s;
+    }
+}
+
+.button-to-top svg {
+    height: 1em;
+    fill: $background-color;
+}
+
+.button-to-top:hover svg {
+    height: 1em;
+    fill: white;
+}  
+
+/* Adaptation */
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .button-to-top {
+        bottom: 1em; /* отступ кнопки от нижнего края страницы*/
+    }
+}
+
+   
 

@@ -34,6 +34,7 @@ function headerMobileMenuToggleShow() {
     });
 });
 
+// They-need-your-help slider
 $(document).ready(function(){
     $('.they-need-your-help__slider').slick({
         appendArrows: ('.slider-navigation-button'),
@@ -48,19 +49,46 @@ $(document).ready(function(){
             {
               breakpoint: 689,
               settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots:true,
+                arrows: false
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+            
           ]
     });
 });
 
+// Deletes qr-code slide from carousel on tablets and smartphones.
 $(function(){
     if ( $(window).width() < 768) {
         var ind = 2;
         $('.carousel-screen__slider').slick('slickRemove', ind-1);
     }
 });
+
+
+// Button to top
+$(function() {
+
+    $(window).scroll(function() {
+   
+    if($(this).scrollTop() != 0) {
+   
+    $('#toTop').fadeIn();
+    
+    } else {
+   
+    $('#toTop').fadeOut();
+   
+    }
+   
+    });
+    
+    $('#toTop').click(function() {
+   
+    $('body,html').animate({scrollTop:0},800);
+   
+    });
+    
+   });
