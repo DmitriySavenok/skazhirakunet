@@ -1022,7 +1022,7 @@ header {
 
 .how-we-help__grid {
   display: grid;
-  grid-template-columns: 31% 31% 31%;
+  grid-template-columns: 32% 32% 32%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1260,11 +1260,6 @@ header {
   color: #656565;
 }
 
-.they-need-your-help .button-block {
-  margin-top: 3em;
-  text-align: center;
-}
-
 /* Слайдер */
 
 /* Слайдер запущен */
@@ -1382,6 +1377,72 @@ header {
 
 /* Smartphones */
 
+.news-and-events {
+  padding-bottom: 3em;
+}
+
+.news-and-events__grid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-and-events__item {
+  padding: 1em;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
+}
+
+.news__img {
+  text-align: center;
+  height: 240px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----- TEMP IMG (Временные заглушки картинок) ----- */
+
+.no-webp #img1{
+  background-image: url("../img/news-img/news-card2.jpg"); }
+
+.no-webp #img2{
+  background-image: url("../img/news-img/news-card1.jpg"); }
+
+.no-webp #img3{
+  background-image: url("../img/news-img/news-card3.jpg"); }
+
+/* ----- TEMP IMG ----- */
+
+.news__title {
+  color: #539DA6;
+}
+
+.news__description {
+  height: 100px;
+}
+
+.news__date {
+  display: inline-block;
+}
+
+.news__date-and-button .usual-button {
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Adaptation */
+
+/* Smartphones */
+
+/* Table 481-768 */
+
+/* Table 768-1238 */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -1426,6 +1487,13 @@ ol,
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* button on screens (.they-need-your-help and .news-and-events) */
+
+.button-block {
+  margin-top: 3em;
+  text-align: center;
 }
 
 .usual-button {
@@ -1698,6 +1766,15 @@ body::-webkit-scrollbar-thumb:hover {
   .how-you-can-help__item .item-info p {
     height: auto;
   }
+
+  .news-and-events__grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .news-and-events__item {
+    margin-bottom: 2em;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1761,6 +1838,14 @@ body::-webkit-scrollbar-thumb:hover {
 
   .slider-navigation-button {
     display: none;
+  }
+
+  .news__description {
+    height: 150px;
+  }
+
+  .news__img {
+    background-position: center;
   }
 
   .button-to-top {
@@ -1835,6 +1920,31 @@ body::-webkit-scrollbar-thumb:hover {
   .how-we-help__item {
     grid-template-columns: 25% 75%;
   }
+
+  .news-and-events__grid {
+    display: block;
+  }
+
+  .news-and-events__item {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .news__img {
+    grid-column: 1 / 2;
+  }
+
+  .news__title,
+  .news__description,
+  .news__date-and-button {
+    grid-column: 2 / 2;
+  }
+
+  .news__date-and-button .usual-button {
+    margin-right: 1em;
+  }
 }
 
 .webp .sms-slide{ background-image: url(../img/sms-slide-background.webp); }
@@ -1842,6 +1952,12 @@ body::-webkit-scrollbar-thumb:hover {
 .webp .volunteer-slide{ background-image: url(../img/volunteer-slide-background.webp); }
 
 .webp .ward-item__avatar{ background: url(../img/ward-avatar/test_photo1.webp); }
+
+.webp #img1{ background-image: url(../img/news-img/news-card2.webp); }
+
+.webp #img2{ background-image: url(../img/news-img/news-card1.webp); }
+
+.webp #img3{ background-image: url(../img/news-img/news-card3.webp); }
 
 @media (max-width: 480px){
 

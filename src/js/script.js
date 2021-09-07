@@ -38,8 +38,14 @@ function headerMobileMenuToggleShow() {
 $(document).ready(function(){
     $('.they-need-your-help__slider').slick({
         appendArrows: ('.slider-navigation-button'),
-        slidesToShow: 3,
+        slidesToShow: 4,
         responsive: [
+            {
+              breakpoint: 1315,
+              settings: {
+              slidesToShow: 3
+                }
+              },
             {
               breakpoint: 1048,
               settings: {
