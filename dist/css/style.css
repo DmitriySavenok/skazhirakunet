@@ -394,6 +394,32 @@ template {
 
 /**/
 
+.development-page .logo {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.development-page img {
+  height: 4em;
+}
+
+.development-page__info {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.development-page__info p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.development-page__info span {
+  color: #539DA6;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
 /* -- header-mobile -- */
 
 .header-mobile {
@@ -1502,6 +1528,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+}
+
+.contacts-info a {
+  text-decoration: none;
 }
 
 .contacts-form button {
