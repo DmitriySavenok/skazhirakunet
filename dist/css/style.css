@@ -407,18 +407,26 @@ template {
 .development-page__info {
   width: 60%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .development-page__info p {
-  text-align: center;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .development-page__info span {
   color: #539DA6;
   font-size: 2em;
-  line-height: 1.5em;
 }
+
+/* Adaptation */
+
+/* Smartphones */
+
+/* Table 481-768 */
+
+/* Table 768-1238 */
 
 /* -- header-mobile -- */
 
@@ -1895,6 +1903,21 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 480px) {
+  .development-page img {
+    height: auto;
+    width: 100%;
+  }
+
+  .development-page__info span {
+    color: #539DA6;
+    font-size: 1.7em;
+    line-height: 1em;
+  }
+
+  .development-page__info {
+    width: 100%;
+  }
+
   .carousel-screen .slick-dots {
     padding-right: 25px;
   }

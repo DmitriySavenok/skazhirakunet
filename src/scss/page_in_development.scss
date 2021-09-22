@@ -11,15 +11,49 @@
 .development-page__info {
     width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .development-page__info p {
-    text-align: center;
     margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 .development-page__info span {
     color: $background-color;
     font-size: 2em;
-    line-height: 1.5em;
+}
+
+/* Adaptation */
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .development-page img {
+        height: auto;
+        width: 100%;
+    }
+
+    .development-page__info span {
+        color: $background-color;
+        font-size: 1.7em;
+        line-height: 1em;
+    }
+
+    .development-page__info {
+        width: 100%;
+    }
+}
+
+/* Table 481-768 */
+@media (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media (max-width: 1119px) {
+   
+}
+
+/* Table 768-1238 */
+@media (min-width: 768px) and (max-width: 1238px) {
+    
 }
