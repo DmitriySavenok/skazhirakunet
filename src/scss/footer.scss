@@ -71,6 +71,11 @@
         max-width: 90%;
         height: auto;
     }
+
+    .footer__item {
+        margin-bottom: 2.5em;
+    }
+
 }
 
 /* Table 932px */
@@ -78,9 +83,14 @@
     .footer__grid {
         display: grid;
         grid-template-columns: 50% 50%;
+        gap: 1em;
     }
 
     .footer__info {
         padding-right: 1em;
+    }
+
+    .footer__site-map ul {
+        margin-right: 0;
     }
 }
