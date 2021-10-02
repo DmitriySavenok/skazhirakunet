@@ -74,26 +74,23 @@
 @media (max-width: 768px) {
     .news-and-events__grid {
         display: grid;
-        grid-template-columns: 100%
+        grid-template-columns: 100%;
+        gap: 1em;
     }
-
-    .news-and-events__item {
-        margin-bottom: 2em;
-    }
-
 }
 
 /* Table 768-1238 */
 @media (min-width: 768px) and (max-width: 1238px) {
     .news-and-events__grid {
-        display: block;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1em;
     }
 
     .news-and-events__item {
         display: grid;
         grid-template-columns: 40% 60%;
         gap: 1em;
-        margin-bottom: 2em;
     }
 
     .news__img {
