@@ -25,6 +25,7 @@ function headerMobileMenuToggleShow() {
     closeIcon.classList.toggle("close-icon-show");
  }
 
+ // Carousel-screen slider settings
  $(document).ready(function(){
     $('.carousel-screen__slider').slick({
         arrows:false,
@@ -120,4 +121,22 @@ $(document).ready(function() {
 		return false;
 	});
 
+});
+
+// Scroll to href script
+$(document).ready(function() {
+  jQuery(".scrollto").click(function () {
+  elementClick = jQuery(this).attr("href")
+
+  var element = document.getElementById("header-mobile-menu");
+  var burgerIcon = document.getElementById("burger-icon");
+  var closeIcon = document.getElementById("close-icon");
+  element.classList.toggle("header-mobile-menu-show");
+  burgerIcon.classList.toggle("burger-icon-hide");
+  closeIcon.classList.toggle("close-icon-show");
+
+  destination = jQuery(elementClick).offset().top - 16;
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+  return false;
+  });
 });
