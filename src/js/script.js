@@ -16,6 +16,12 @@ testWebP(function (support) {
     }
 });
 
+AOS.init({
+  offset: -250,
+  duration: 1500,
+  once: true
+});
+
 function headerMobileMenuToggleShow() {
     var element = document.getElementById("header-mobile-menu");
     var burgerIcon = document.getElementById("burger-icon");

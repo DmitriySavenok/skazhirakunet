@@ -36,7 +36,7 @@
   <body>
 
     <header>
-      <div class="header-desktop">
+      <div class="header-desktop" data-aos="fade-down">
         <div class="header-desktop__background">
           <div class="container">
             <div class="header-desktop__content">
@@ -110,7 +110,7 @@
 
     </header>
 
-    <div class="carousel-screen">
+    <div class="carousel-screen" data-aos="fade-up">
       <div class="container">
         <div class="carousel-screen__slider">
 
@@ -156,7 +156,7 @@
       </div>
     </div>
 
-    <section class="slogan">
+    <section class="slogan" data-aos="zoom-in" data-aos-delay="900" data-aos-anchor=".carousel-screen">
       <div class="container">
         <div class="corner-box-1 slogan__text">
           <div class="corner-textbox-1">
@@ -168,10 +168,10 @@
 
     <section class="how-we-help">
       <div class="container">
-        <h2>Как мы помогаем</h2>
+        <h2 data-aos="fade-right">Как мы помогаем</h2>
         <div class="how-we-help__grid">
 
-          <div class="how-we-help__item">
+          <div class="how-we-help__item item1" data-aos="zoom-in" data-aos-delay="100">
             <div class="background-number"><span>1</span></div>
             <div class="item-info">
               <h3>Собираем средства</h3>
@@ -179,7 +179,7 @@
             </div>
           </div>
 
-          <div class="how-we-help__item">
+          <div class="how-we-help__item item2" data-aos="fade-right" data-aos-anchor=".item1" data-aos-delay="500">
             <div class="background-number"><span>2</span></div>
             <div class="item-info">
               <h3>Организуем и проводим</h3>
@@ -187,7 +187,7 @@
             </div>
           </div>
 
-          <div class="how-we-help__item">
+          <div class="how-we-help__item" data-aos="fade-right" data-aos-anchor=".item2" data-aos-delay="900">
             <div class="background-number"><span>3</span></div>
             <div class="item-info">
               <h3>Помогаем</h3>
@@ -615,6 +615,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/aos.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
