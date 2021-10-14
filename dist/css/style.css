@@ -2758,6 +2758,20 @@ form {
   height: auto;
 }
 
+.ward-card h2 {
+  margin: 0;
+}
+
+.ward-card__grid {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 1em;
+}
+
+.ward-card__info span {
+  color: #539DA6;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #656565;
@@ -2898,6 +2912,39 @@ body::-webkit-scrollbar-thumb:hover {
 .button-to-top:hover svg {
   height: 1em;
   fill: white;
+}
+
+/* breadcrumb style */
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li::before {
+  padding: 8px;
+  color: #656565;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #656565;
+  text-decoration: none;
+}
+
+ul.breadcrumb li:last-child {
+  color: #539DA6;
+}
+
+ul.breadcrumb li a:hover {
+  color: #539DA6;
+  text-decoration: underline;
 }
 
 /* Adaptation */

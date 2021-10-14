@@ -30,7 +30,7 @@
     <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icons/favicon.png">
 
-    <title>Все подопечные фонда</title>
+    <title>Подопечный</title>
   </head>
 
   <body>
@@ -52,9 +52,9 @@
               </div> <!-- /.header-contacts -->
 
               <div class="header-navigation">
-                <a class="scrollto" href="#wards">Подопечные Фонда</a>
+                <a href="all_wards.html">Подопечные фонда</a>
                 <a href="">Программы</a>
-                <a class="scrollto" href="#news_and_events">События</a>
+                <a href="index.html#news_and_events">События</a>
                 <div class="dropdown">
                   <a class="dropbtn"><svg viewBox="0 0 512.011 512.011"><path d="M505.755 123.592c-8.341-8.341-21.824-8.341-30.165 0L256.005 343.176 36.421 123.592c-8.341-8.341-21.824-8.341-30.165 0s-8.341 21.824 0 30.165l234.667 234.667a21.275 21.275 0 0015.083 6.251 21.275 21.275 0 0015.083-6.251l234.667-234.667c8.34-8.341 8.34-21.824-.001-30.165z"/></svg></a>
                   <div class="dropdown-content">
@@ -110,10 +110,25 @@
 
     </header>
 
-    <main>
-        <div class="container">
-            <h2>Все подопечные фонда</h2>
+    <main class="ward-card">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="all_wards.html">Все подопечные фонда</a></li>
+          <li>Клевцов Иван</li>
+        </ul>
+        <h2> <span class="surname-of-ward">Клевцов</span> <span class="name-of-ward">Иван</span></h2>
+        <div class="ward-card__grid">
+          <div class="ward-card__info">
+            <p class="age">Возраст: <span>6 лет</span></p>
+            <p class="diagnosis">Диагноз: <span>Синдром Паллистера-Киллиана</span></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, iusto alias repudiandae eligendi animi expedita dolorum deserunt natus, dolor placeat assumenda officiis. Aliquid sint voluptatibus officia ipsum odio explicabo maiores.</p>
+          </div>
+          <div class="ward-card__gallery">
+
+          </div>
         </div>
+      </div>
     </main>
 
     <section class="contact-us">
@@ -178,7 +193,7 @@
             <h3>Карта сайта</h3>
             <div class="footer__site-map">
               <ul>
-                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="all_wards.html">Подопечные фонда</a></li>
                 <li><a href="">Программы</a></li>
                 <li><a href="index.html#news_and_events">События</a></li>
                 <li><a href="">О нас</a></li>

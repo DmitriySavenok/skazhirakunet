@@ -1,0 +1,13 @@
+.ward-card h2 {
+    margin: 0;
+}
+
+.ward-card__grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 1em;
+}
+
+.ward-card__info span {
+    color: $background-color;
+}
