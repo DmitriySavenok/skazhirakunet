@@ -16,12 +16,6 @@ testWebP(function (support) {
     }
 });
 
-AOS.init({
-  offset: -250,
-  duration: 1500,
-  once: true
-});
-
 function headerMobileMenuToggleShow() {
     var element = document.getElementById("header-mobile-menu");
     var burgerIcon = document.getElementById("burger-icon");
@@ -41,35 +35,39 @@ function headerMobileMenuToggleShow() {
     });
 });
 
-// They-need-your-help slider
 $(document).ready(function(){
-    $('.they-need-your-help__slider').slick({
-        appendArrows: ('.slider-navigation-button'),
-        slidesToShow: 4,
-        responsive: [
-            {
-              breakpoint: 1315,
-              settings: {
-              slidesToShow: 3
-                }
-              },
-            {
-              breakpoint: 1048,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 689,
-              settings: {
-                slidesToShow: 1,
-                dots:true,
-                arrows: false
-              }
+  $('.they-need-your-help__slider').slick({
+    appendArrows: ('.slider-navigation-button'),
+    slidesToShow: 4,
+    responsive: [
+        {
+          breakpoint: 1315,
+          settings: {
+          slidesToShow: 3
             }
-            
-          ]
-    });
+          },
+        {
+          breakpoint: 1048,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 689,
+          settings: {
+            slidesToShow: 1,
+            dots:true,
+            arrows: false
+          }
+        }
+      ]
+  });
+
+  AOS.init({
+    duration: 1500,
+    once: true
+  });
+
 });
 
 // Deletes qr-code slide from carousel on tablets and smartphones.
