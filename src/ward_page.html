@@ -138,28 +138,87 @@
 
 
           <div class="ward-card__gallery">
-            <div class="ward-card__gallery-img">
-              <a href="img/fond-document-1_big.jpg" data-fancybox="gallery">
-                <img src="img/fond-document-1.jpg" alt="">
-              </a>
+
+            <div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/1/900x600"
+                data-fancybox="gallery"
+                data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. Morbi quis ipsum quis velit."
+              >
+                <img src="https://lipsum.app/id/1/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/2/900x600"
+                data-fancybox="gallery"
+                data-caption="Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris"
+              >
+                <img src="https://lipsum.app/id/2/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/3/900x600"
+                data-fancybox="gallery"
+                data-caption="Hello 🖐"
+              >
+                <img src="https://lipsum.app/id/3/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/4/900x600"
+                data-fancybox="gallery"
+                data-caption="Another caption"
+              >
+                <img src="https://lipsum.app/id/4/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/5/900x600"
+                data-fancybox="gallery"
+              >
+                <img data-lazy-src="https://lipsum.app/id/5/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/6/900x600"
+                data-fancybox="gallery"
+              >
+                <img src="https://lipsum.app/id/6/600x400" />
+              </div>
+              <div
+                class="carousel__slide"
+                data-src="https://lipsum.app/id/7/900x600"
+                data-fancybox="gallery"
+              >
+                <img src="https://lipsum.app/id/7/600x400" />
+              </div>
             </div>
-            <div class="ward-card__gallery-img">
-              <a href="img/fond-document-1_big.jpg" data-fancybox="gallery">
-                <img src="img/fond-document-1.jpg" alt="">
-              </a>
+            
+            <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/1/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/2/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/3/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/4/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/5/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/6/100x100" />
+              </div>
+              <div class="carousel__slide">
+                <img class="panzoom__content" src="https://lipsum.app/id/7/100x100" />
+              </div>
             </div>
 
-            <div class="ward-card__gallery-img">
-              <a href="img/fond-document-1_big.jpg" data-fancybox="gallery">
-                <img src="img/fond-document-1.jpg" alt="">
-              </a>
-            </div>
-
-            <div class="ward-card__gallery-img">
-              <a href="img/fond-document-1_big.jpg" data-fancybox="gallery">
-                <img src="img/fond-document-1.jpg" alt="">
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -217,5 +276,6 @@
     <script src="js/fancybox.umd.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.min.js"></script>
+    <script src="js/ward-page-gallery.js"></script>
   </body>
 </html>
