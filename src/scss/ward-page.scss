@@ -3,6 +3,7 @@
 }
 
 .ward-card__grid {
+    padding-bottom: 2em;
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 1em;
@@ -10,4 +11,39 @@
 
 .ward-card__info span {
     color: $background-color;
+}
+
+.ward-card__info .description {
+    margin: 2em 0;
+}
+
+.ward-card .progress-bar-fill {
+    height: 2em;
+}
+
+.ward-card__gallery {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ward-card__gallery-img img {
+    width: auto;
+    height: 320px;
+}
+
+/* Adaptation */
+
+@media (max-width: 960px) {
+    .ward-card__grid {
+        display: inherit;
+    }
+}
+
+@media (max-width: 480px) {
+    .ward-card__gallery-img img {
+        width: 100%;
+        height: auto;
+    }
 }

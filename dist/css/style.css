@@ -4368,6 +4368,7 @@ form {
 }
 
 .ward-card__grid {
+  padding-bottom: 2em;
   display: grid;
   grid-template-columns: 48% 48%;
   gap: 1em;
@@ -4376,6 +4377,33 @@ form {
 .ward-card__info span {
   color: #539DA6;
 }
+
+.ward-card__info .description {
+  margin: 2em 0;
+}
+
+.ward-card .progress-bar-fill {
+  height: 2em;
+}
+
+.ward-card__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ward-card__gallery-img img {
+  width: auto;
+  height: 320px;
+}
+
+/* Adaptation */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -4756,6 +4784,12 @@ ul.breadcrumb li a:hover {
   }
 }
 
+@media (max-width: 960px) {
+  .ward-card__grid {
+    display: inherit;
+  }
+}
+
 @media (max-width: 932px) {
   .contact-us__grid {
     display: inherit;
@@ -4926,6 +4960,11 @@ ul.breadcrumb li a:hover {
   .privicy-link {
     max-width: 85%;
     display: inline-block;
+  }
+
+  .ward-card__gallery-img img {
+    width: 100%;
+    height: auto;
   }
 
   .button-to-top {
