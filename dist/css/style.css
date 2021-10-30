@@ -3889,7 +3889,6 @@ header {
 
 .ward-item {
   padding: 1em;
-  height: 440px;
   width: 280px !important;
   background-color: white;
   -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.12));
@@ -3897,13 +3896,12 @@ header {
 }
 
 .no-webp .ward-item__avatar{
-  background: url(../img/ward-avatar/test_photo1.png); }
+  background-image: url(../img/ward-avatar/ivan.jpg); }
 
 .ward-item__avatar {
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 200px;
+  background-position: cover;
+  max-width: 280px;
+  height: 180px;
 }
 
 .ward-item__title h3 {
@@ -3943,9 +3941,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3978,14 +3976,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 480px;
+  height: 500px;
 }
 
 /* Слайд */
-
-.they-need-your-help__slider .slick-slide {
-  text-align: center;
-}
 
 /* Слайд активный (показывается) */
 
@@ -4386,16 +4380,13 @@ form {
   height: 2em;
 }
 
-.ward-card__gallery-img img {
-  width: auto;
-  height: 320px;
-}
-
 /* Gallery style */
 
 #mainCarousel {
   width: auto;
+  max-height: 500px;
   margin: 0 auto 1rem auto;
+  text-align: center;
   --carousel-button-color: #170724;
   --carousel-button-bg: #fff;
   --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
@@ -4406,8 +4397,8 @@ form {
 }
 
 #mainCarousel img {
-  width: 100%;
-  height: auto;
+  height: 500px;
+  width: auto;
 }
 
 #mainCarousel .carousel__slide {
@@ -5119,7 +5110,7 @@ ul.breadcrumb li a:hover {
 
 .webp .volunteer-slide{ background-image: url(../img/volunteer-slide-background.webp); }
 
-.webp .ward-item__avatar{ background: url(../img/ward-avatar/test_photo1.webp); }
+.webp .ward-item__avatar{ background-image: url(../img/ward-avatar/ivan.webp); }
 
 .webp #img1{ background-image: url(../img/news-img/news-card2.webp); }
 

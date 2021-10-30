@@ -21,17 +21,13 @@
     height: 2em;
 }
 
-
-.ward-card__gallery-img img {
-    width: auto;
-    height: 320px;
-}
-
 /* Gallery style */
 
 #mainCarousel {
     width: auto;
+    max-height: 500px;
     margin: 0 auto 1rem auto;
+    text-align: center;
   
     --carousel-button-color: #170724;
     --carousel-button-bg: #fff;
@@ -42,8 +38,9 @@
     --carousel-button-svg-height: 20px;
     --carousel-button-svg-stroke-width: 2.5;
     & img {
-        width: 100%;
-        height: auto;
+        height: 500px;
+        width: auto;
+        
     }
   }
   

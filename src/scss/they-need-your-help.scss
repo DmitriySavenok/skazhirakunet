@@ -28,18 +28,16 @@
 /* Item style */
 .ward-item {
     padding: 1em;
-    height: 440px;
     width: 280px !important;
     background-color:white;
     filter: drop-shadow(0px 4px 6px rgba(0,0,0, 0.12));
 }
 
 .ward-item__avatar {
-    background: url(../img/ward-avatar/test_photo1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
+    background-image: url(../img/ward-avatar/ivan.jpg);
+    background-position: cover;
+    max-width: 280px;
+    height: 180px;
 }
 
 .ward-item__title h3 {
@@ -75,7 +73,7 @@
 
 .ward-item__help-button {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 1em 0;
 }
@@ -102,11 +100,11 @@
 /* Лента слайдов */
 .they-need-your-help__slider .slick-track {
     display: flex;
-    height: 480px;
+    height: 500px;
 }
 /* Слайд */
 .they-need-your-help__slider .slick-slide {
-    text-align: center;
+   
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{}
