@@ -1,0 +1,47 @@
+//- Блок с переменными используемыми на странице
+block vars
+- var headTitle; //- Переменная которая хранит заголовок страницы
+- var bodyClass; //- Переменная которая хранит названия класса для тега body
+
+doctype html
+html(lang="ru" class="page")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    //- Заголовок для каждой страницы
+    title #{headTitle}
+
+    //- Подключение минифицированного normalize файла стилей
+    link(rel="stylesheet", href="css/normalize.min.css")
+
+    //- Подключение основного минифицировоного файла стилей
+    link(rel="stylesheet", href="css/style.min.css")
+
+    //- Подключение favicon
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="img/favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="img/favicon/apple-touch-icon.png" type="image/png">
+    <link rel="icon" href="img/favicon/android-chrome-512x512.png" type="image/png">
+    <link rel="icon" href="img/favicon/android-chrome-192x192.png" type="image/png">
+
+block content
+body(class=bodyClass, id="body")
+  //- Подключение header
+  include blocks/header/header.pug
+
+  //- Блок main который хранит основной контент страницы (при необходимости переопределяется)
+  block main
+
+  //- Подключение footer
+  include blocks/footer/footer.pug
+
+  //- Подключение общих для всех страниц файлов со скриптами
+  script(src="js/jQuery_v3.6.0.min.js")
+  script(src="js/script.min.js")
+
+  //- Блок с подключением js файлов (при необходимости переопределяется)
+  block scripts
