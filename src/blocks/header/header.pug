@@ -4,18 +4,36 @@ header.header#header
       .header__grid
         a(class="header__logo-link" href="index.html")
           img(class="header__logo-img" src="img/logo.svg", alt="Логотип фонда")
+        button(class="header__menu-button")
         .header__content
           .header__contacts
-          .header__navigation
+            ul.header__contacts-list
+              li.header__contacts-item
+                a(class="header__contacts-link phone-link" href="tel:+79102995050")
+                  <svg xmlns="http://www.w3.org/2000/svg" height="13" fill="white" viewBox="0 0 384 512"><path d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"/></svg>
+                  | +7 910 299 50 50
+              li.header__contacts-item
+                a(class="header__contacts-link" href="mailto:skazhiraku.net@mail.ru" target="_blank")
+                  <svg xmlns="http://www.w3.org/2000/svg" height="12" fill="white" viewBox="0 0 512 460"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                  | skazhiraku.net@mail.ru
+              li.header__contacts-item
+                a(class="header__contacts-link" href="https://vk.com/skazhirakunet" target="_blank")
+                  <svg height="9" fill="white" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5312 0.6875C16.625 0.3125 16.5312 0 15.9688 0H14.125C13.6562 0 13.4375 0.25 13.3125 0.53125C13.3125 0.53125 12.375 2.8125 11.0625 4.3125C10.625 4.71875 10.4375 4.875 10.1875 4.875C10.0938 4.875 9.90625 4.71875 9.90625 4.34375V0.6875C9.90625 0.21875 9.78125 0 9.375 0H6.5C6.1875 0 6.03125 0.21875 6.03125 0.4375C6.03125 0.875 6.6875 0.96875 6.75 2.21875V4.9375C6.75 5.53125 6.65625 5.65625 6.40625 5.65625C5.78125 5.65625 4.28125 3.34375 3.375 0.71875C3.1875 0.21875 3 0 2.53125 0H0.6875C0.1875 0 0.0625 0.25 0.0625 0.53125C0.0625 1.03125 0.6875 3.4375 2.96875 6.65625C4.5 8.84375 6.65625 10 8.59375 10C9.75 10 9.90625 9.75 9.90625 9.3125C9.90625 7.21875 9.8125 7 10.375 7C10.6562 7 11.125 7.15625 12.2188 8.21875C13.4688 9.46875 13.6875 10 14.375 10H16.2188C16.75 10 17 9.75 16.8438 9.21875C16.5 8.15625 14.1562 5.90625 14.0312 5.75C13.75 5.40625 13.8438 5.25 14.0312 4.9375C14.0312 4.9375 16.2812 1.75 16.5312 0.6875Z"/>
+                  </svg>
+                  | Сообщество Вконтакте
+          nav.header__navigation
             ul.header__navigation-list
               li.header__navigation-item
-                a(class="header__navigation-link" href="#") О фонде
+                a(class="header__navigation-link" href="#") Жизнь с диагнозом
               li.header__navigation-item
                 a(class="header__navigation-link" href="#") События
               li.header__navigation-item
-                a(class="header__navigation-link" href="#") Жизнь с диагнозом
+                a(class="header__navigation-link" href="#") О фонде
               li.header__navigation-item
                 a(class="header__navigation-link" href="#") Документы
               li.header__navigation-item
                 a(class="header__navigation-link" href="#") Реквизиты
           .header__buttons-block
+            a(class="header__need-help" href="") Нужна помошь?
+            a(class="header__help header__navigation-link" href="#") Помочь
