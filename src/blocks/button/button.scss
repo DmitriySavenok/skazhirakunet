@@ -1,0 +1,13 @@
+.button {
+  padding: 14px;
+  color: $background-color;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid $background-color;
+
+  &:hover {
+    color: white;
+    background-color: $background-color;
+    transition-duration: 0.5s;
+  }
+}
