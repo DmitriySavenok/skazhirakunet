@@ -1,5 +1,8 @@
 @import "variables";
+@import "blocks/button/button.scss";
 @import "blocks/header/header.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/contacts-section/contacts-section.scss";
 
 body {
   color: $text-color-dark;
@@ -23,11 +26,11 @@ h3 {
 }
 
 h2 {
-  font-size: 2.3em;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 22px;
 }
 
 .visually-hidden {
