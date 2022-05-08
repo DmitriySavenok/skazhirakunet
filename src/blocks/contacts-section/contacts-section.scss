@@ -45,14 +45,19 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contacts-form button {
   background-color: white;
 }
 
+.form-button {
+  margin-bottom: 16px;
+}
+
 .privicy-text {
+  margin-top: 0;
   font-size: 16px;
 }
 
