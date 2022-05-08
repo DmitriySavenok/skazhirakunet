@@ -1,0 +1,65 @@
+.slogan-section {
+  color: $text-color-dark;
+  font-style: italic;
+}
+
+.slogan-section .container {
+  text-align: center;
+}
+
+.corner-box-1 {
+  position: relative;
+  display: inline-block;
+  width: 750px;
+  margin: 10px;
+  border: 1px solid $background-color;
+  transition: all 0.3s ease;
+}
+
+.corner-box-1::before,
+.corner-box-1::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: block;
+  background: white;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  content: "";
+}
+
+.corner-box-1::before {
+  width: calc(100% + 4px);
+  height: 75%;
+  transition: height 0.6s;
+}
+
+.corner-box-1::after {
+  width: 90%;
+  height: calc(100% + 4px);
+  transition: width 0.6s;
+}
+
+.corner-box-1:hover::before,
+.corner-box-1:focus::before {
+  height: 50%;
+}
+
+.corner-box-1:hover::after,
+.corner-box-1:focus::after {
+  width: 75%;
+}
+
+.corner-textbox-1 {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .corner-box-1 {
+    width: 90%;
+  }
+}
