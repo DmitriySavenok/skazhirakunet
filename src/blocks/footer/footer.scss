@@ -1,0 +1,67 @@
+.footer {
+  padding: 50px 0;
+  color: white;
+  background-color: $background-color-dark;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer__logo-img {
+  max-width: 90%;
+  height: auto;
+}
+
+.footer__title {
+  color: white;
+}
+
+.footer__link {
+  display: block;
+  color: white;
+  line-height: 24px;
+  transition: 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+}
+
+.footer__contact-link {
+  text-decoration: none;
+}
+
+.identification-numbers {
+  text-transform: uppercase;
+}
+
+.site-autor {
+  display: inline-block;
+}
+
+.footer__site-map-list {
+  padding-left: 0;
+  column-count: 2;
+  list-style-type: none;
+}
+
+@media (max-width: 920px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__info {
+    order: 1;
+  }
+}
+
+@media (max-width: 630px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}

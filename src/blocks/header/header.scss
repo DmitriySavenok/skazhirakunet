@@ -99,12 +99,7 @@
   display: inline-block;
 }
 
-.header__need-help {
-  background-color: white;
-}
-
-.header__navigation-link,
-.header__need-help {
+.header__navigation-link {
   display: flex;
   align-items: center;
   height: 45px;
@@ -119,9 +114,8 @@
   }
 }
 
-.header__help {
+.header__navigation-link.button-help {
   color: white;
-  background-color: $help-btn-color;
 
   &:hover {
     color: white;
@@ -222,6 +216,11 @@
 
   .header__navigation-link {
     color: white;
+  }
+
+  .need-help-button {
+    color: $text-color-dark;
+    background-color: white;
   }
 
   .header__buttons-block {
