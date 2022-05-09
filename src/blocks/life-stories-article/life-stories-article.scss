@@ -1,0 +1,36 @@
+.life-stories-article__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.life-stories-article-text {
+  font-size: 22px;
+  text-indent: 16px;
+}
+
+.life-stories-article-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.life-stories-article-text:last-of-type {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 960px) {
+  .life-stories-article__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .life-stories-article-images-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    order: -1;
+  }
+}

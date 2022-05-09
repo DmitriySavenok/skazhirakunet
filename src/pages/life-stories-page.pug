@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Жизнь с диагнозом. Благотворительный Фонд "Скажи раку — нет!'; //- Title
+  - var bodyClass = 'life-stories-body' //- Классы для body
+
+block content
+
+block main
+  main
+    include ../blocks/life-stories-page-content/life-stories-page-content.pug
+
+block scripts

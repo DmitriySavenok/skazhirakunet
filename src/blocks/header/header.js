@@ -51,3 +51,16 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       headerMenuClose();
   });
 });
+
+function headerMenuActiveLink() {
+  let bodyClass = document.getElementById("body").classList.item(0);
+
+  switch(bodyClass) {
+    case 'life-stories-body':
+      let lifeStories = document.querySelector(".header__life-stories-link")
+      lifeStories.classList.add("header-active-link");
+      break;
+  }
+}
+
+headerMenuActiveLink();

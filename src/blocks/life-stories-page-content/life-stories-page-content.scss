@@ -1,0 +1,18 @@
+.life-stories-page-content__grid .life-stories-section__cards-block {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1080px) {
+  .life-stories-page-content__grid .life-stories-section__cards-block {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 650px) {
+  .life-stories-page-content__grid .life-stories-section__cards-block {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}

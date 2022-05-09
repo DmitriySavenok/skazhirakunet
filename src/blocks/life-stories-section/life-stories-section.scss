@@ -4,7 +4,7 @@
 
 .life-stories-section__grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
@@ -71,4 +71,26 @@
 .card-button {
   display: block;
   text-align: center;
+}
+
+@media (max-width: 1020px) {
+  .life-stories-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .life-stories-section__cards-block {
+    grid-template-columns: 1fr 1fr;
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .life-stories-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .life-stories-section__cards-block {
+    grid-template-columns: 1fr;
+    order: -1;
+  }
 }
