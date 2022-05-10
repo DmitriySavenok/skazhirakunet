@@ -1,6 +1,7 @@
 .life-stories-page-content__grid .life-stories-section__cards-block {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: flex-start;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 1080px) {
