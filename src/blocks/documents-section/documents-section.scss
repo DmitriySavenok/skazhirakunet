@@ -1,0 +1,22 @@
+.documents-section {
+  padding-bottom: 80px;
+}
+
+.documents-section__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  justify-content: center;
+}
+
+.documents-section__img {
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .documents-section__grid {
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,12 @@
+//- Перемнные
+block vars
+- var titleName; //- Переменная которая хранит заголовок страницы (Имя)
+
+section.life-stories-article
+  .container
+    block article-title
+      h2 #{titleName}
+    .life-stories-article__grid
+      block life-stories-article-content
+
+

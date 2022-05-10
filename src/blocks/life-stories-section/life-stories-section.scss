@@ -1,0 +1,96 @@
+.index-body .life-stories-section {
+  padding-bottom: 0;
+}
+
+.life-stories-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.life-stories-section__description-text {
+  text-indent: 16px;
+}
+
+.life-stories-section__description-text:last-of-type {
+  margin-bottom: 36px;
+}
+
+.life-stories-section__cards-block {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.life-stories-section__card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: white;
+  filter: drop-shadow(0 4px 6px rgba(0 0 0 / 12%));
+}
+
+.life-stories-section__card-photo {
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.life-stories-section__card-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.life-stories-section__card-head,
+.life-stories-section__card-diagnosis-block {
+  margin: 16px 0;
+}
+
+.life-stories-section__card-name,
+.life-stories-section__card-diagnosis {
+  margin-right: 6px;
+}
+
+.life-stories-section__card-name,
+.life-stories-section__card-age,
+.life-stories-section__card-diagnosis,
+.life-stories-section__card-diagnosis-text {
+  display: inline;
+}
+
+.life-stories-section__card-diagnosis {
+  color: $background-color;
+}
+
+.life-stories-section__card-button {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.card-button {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 1020px) {
+  .life-stories-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .life-stories-section__cards-block {
+    grid-template-columns: 1fr 1fr;
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .life-stories-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .life-stories-section__cards-block {
+    grid-template-columns: 1fr;
+    order: -1;
+  }
+}

@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Жизнь с диагнозом. Иван.'; //- Title
+  - var bodyClass = 'life-stories-ivan-page' //- Классы для body
+
+block content
+
+block main
+  main
+    include ../blocks/life-stories-article/life-stories-article-ivan.pug
+
+block scripts

@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Глеб. Жизнь с диагнозом.'; //- Title
+  - var bodyClass = 'life-stories-gleb-page' //- Классы для body
+
+block content
+
+block main
+  main
+    include ../blocks/life-stories-article/life-stories-article-gleb.pug
+
+block scripts

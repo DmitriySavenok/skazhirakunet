@@ -1,0 +1,28 @@
+.requisites-page-content {
+  padding-bottom: 80px;
+}
+
+.requisites-page-content__sber-info {
+  margin-bottom: 30px;
+}
+
+.requisites-page-content__fond-name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.requisites-page-content__sber-qr {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 16px;
+}
+
+.sber-qr__instruction-list {
+  padding-left: 16px;
+}
+
+@media (max-width: 650px) {
+  .requisites-page-content__sber-qr {
+    display: block;
+  }
+}

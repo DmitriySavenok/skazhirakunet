@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   top: 0;
+  z-index: 3;
   width: 100%;
   height: 90px;
   background-color: white;
@@ -132,6 +133,11 @@
 
 .header__menu-button-icon {
   fill: white;
+}
+
+.header__navigation-link.header-active-link {
+  color: $background-color;
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 1278px) {
