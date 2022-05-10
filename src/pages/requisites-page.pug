@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Реквизиты. Благотворительный Фонд "Скажи раку — нет!'; //- Title
+  - var bodyClass = 'requisites-body' //- Классы для body
+
+block content
+
+block main
+  main
+    include ../blocks/requisites-page-content/requisites-page-content.pug
+
+block scripts

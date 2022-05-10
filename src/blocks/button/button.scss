@@ -11,6 +11,11 @@
     background-color: $background-color;
     transition-duration: 0.5s;
   }
+
+  &:active {
+    color: $background-color;
+    background-color: #f2f2f2;
+  }
 }
 
 .button-help {
@@ -20,5 +25,13 @@
   &:hover {
     color: white;
     background-color: $help-btn-color-hover;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    color: white;
+    background-color: $background-color;
+    border: none;
   }
 }

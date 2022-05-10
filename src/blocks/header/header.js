@@ -4,14 +4,20 @@ let menuButton = document.querySelector("#header__menu-button");
 let headerLink = document.querySelector(".header__link");
 let headerContent = document.querySelector("#header__content");
 
+// Изменение атрибута href для перехода к форме обратной связи
 function needHelpButtonHref() {
   let needHelpButton = document.querySelector("#need-help-button");
+  let lifeStoriesButton = document.querySelector("#life-stories-button");
 
   if (body.classList.contains('index-body') == true) {
     needHelpButton.href="#contact-us";
   }
+  if (body.classList.contains('index-body') == true) {
+    lifeStoriesButton.href="#life-stories-section";
+  }
 }
 
+// Активный пункт навигации
 function headerMenuActiveLink() {
   let bodyClass = document.getElementById("body").classList.item(0);
 
@@ -19,6 +25,10 @@ function headerMenuActiveLink() {
     case 'life-stories-body':
       let lifeStories = document.querySelector(".header__life-stories-link")
       lifeStories.classList.add("header-active-link");
+      break;
+    case 'requisites-body':
+      let requisitesBody = document.querySelector(".requisites-button")
+      requisitesBody.classList.add("header-active-link");
       break;
   }
 }
