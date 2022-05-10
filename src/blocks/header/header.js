@@ -4,6 +4,28 @@ let menuButton = document.querySelector("#header__menu-button");
 let headerLink = document.querySelector(".header__link");
 let headerContent = document.querySelector("#header__content");
 
+function needHelpButtonHref() {
+  let needHelpButton = document.querySelector("#need-help-button");
+
+  if (body.classList.contains('index-body') == true) {
+    needHelpButton.href="#contact-us";
+  }
+}
+
+function headerMenuActiveLink() {
+  let bodyClass = document.getElementById("body").classList.item(0);
+
+  switch(bodyClass) {
+    case 'life-stories-body':
+      let lifeStories = document.querySelector(".header__life-stories-link")
+      lifeStories.classList.add("header-active-link");
+      break;
+  }
+}
+
+needHelpButtonHref();
+headerMenuActiveLink();
+
 function headerMenuToggle() {
   body.classList.toggle("noscroll");
   menuButton.classList.toggle("opened");
@@ -51,16 +73,3 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       headerMenuClose();
   });
 });
-
-function headerMenuActiveLink() {
-  let bodyClass = document.getElementById("body").classList.item(0);
-
-  switch(bodyClass) {
-    case 'life-stories-body':
-      let lifeStories = document.querySelector(".header__life-stories-link")
-      lifeStories.classList.add("header-active-link");
-      break;
-  }
-}
-
-headerMenuActiveLink();
