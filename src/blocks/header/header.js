@@ -30,6 +30,10 @@ function headerMenuActiveLink() {
       let requisitesBody = document.querySelector(".requisites-button")
       requisitesBody.classList.add("header-active-link");
       break;
+    case 'documents-body':
+      let documentsBody = document.querySelector(".documents-page-link")
+      documentsBody.classList.add("header-active-link");
+    break;
   }
 }
 

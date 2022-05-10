@@ -1,0 +1,18 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Документы фонда. Благотворительный Фонд "Скажи раку — нет!'; //- Title
+  - var bodyClass = 'documents-body' //- Классы для body
+
+block styles
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+block content
+
+block main
+  main
+    include ../blocks/documents-section/documents-section.pug
+
+block scripts
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
