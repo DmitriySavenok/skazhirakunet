@@ -1,0 +1,39 @@
+extends need-help-page-content-layout.pug
+
+block need-help-page-vars
+  - var titleName = 'Яблоков Марк'; //- Переменная которая хранит заголовок страницы (Имя)
+  - var requiredAmount = '170000';
+  - var donatedNow = '0';
+  - var photoName_1 = 'mark-photo-1';
+  - var photoName_2 = 'mark-photo-2';
+  - var photoName_3 = 'mark-photo-3';
+
+block need-help-info
+  p.need-help-page__text Маленькому жителю нашего города Марку Яблокову 1 июня исполнится 6 лет. У ребёнка проблемы со зрением. (-18, -16), ДЦП, спастический тетрапарез - последствие гипоксии во время родов. К сожалению, возможность самостоятельно передвигаться отсутствует. С 2019 году по 2020 год он находился на лечении в Детском Областном онко-гематологическом центре г.Брянска. Маркуша  проходил 6 курсов химия терапии - лечили онкологию (поражение кишечника - Лимфома Беркетта). 
+    | Многое позади, Марк не унывает, растет  смышлёным и весёлым парнишкой, как любой ребенок развивается и хочет участвовать в поездках  и прогулках, за пределами дома. Мальчику необходима специализированная, компактная,  облегченная прогулочная коляска-трость. К сожалению, выделенная коляска со стороны государства, тяжёлая и габаритная, хрупкой маме не просто, не под силу ее с собой брать.
+    | Поэтому мы открываем сбор на лёгкую маневренную коляска-трость Otto Bock Лиза, которая поможет Марку не сидеть дома, бывать на улице, общаться с друзьями (это же невероятно важно в любом возрасте) и облегчить маме жизнь. Ведь впереди лето
+    | На сегодняшний день стоимость коляски 170000руб.- сумма неподъемная для семьи. Поддержите мальчика. Из самых небольших пожертвований складываются большие добрые дела.
+
+
+block need-help-photo
+  a(href="img/photo/need-help-section/mark-photo-1.jpg" data-fancybox="gallery")
+    <picture>
+      <source srcset="" type="image/avif">
+      <source srcset="" type="image/webp">
+      <source srcset="img/photo/need-help-section/mark-photo-1.jpg" type="image/jpg">
+      <img class="need-help-page__img" src="img/photo/need-help-section/mark-photo-1.jpg" alt="Фото Марка">
+    </picture>
+  a(href="img/photo/need-help-section/mark-photo-2.jpg" data-fancybox="gallery")
+    <picture>
+      <source srcset="" type="image/avif">
+      <source srcset="" type="image/webp">
+      <source srcset="img/photo/need-help-section/mark-photo-2.jpg" type="image/jpg">
+      <img class="need-help-page__img" src="img/photo/need-help-section/mark-photo-2.jpg" alt="Фото Марка">
+    </picture>
+  a(href="img/photo/need-help-section/mark-photo-3.jpg" data-fancybox="gallery")
+    <picture>
+      <source srcset="" type="image/avif">
+      <source srcset="" type="image/webp">
+      <source srcset="img/photo/need-help-section/mark-photo-3.jpg" type="image/jpg">
+      <img class="need-help-page__img" src="img/photo/need-help-section/mark-photo-3.jpg" alt="Фото Марка">
+    </picture>

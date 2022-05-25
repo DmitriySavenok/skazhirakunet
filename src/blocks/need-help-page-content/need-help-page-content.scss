@@ -1,0 +1,64 @@
+.need-help-page__section {
+  padding-bottom: 80px;
+}
+
+.need-help-page__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.need-help-page__text {
+  margin-top: 0;
+  font-size: 22px;
+  text-indent: 16px;
+}
+
+.need-help-page__img {
+  width: 100%;
+}
+
+.need-help-page__photo-block {
+  display: grid;
+  grid-auto-rows: minmax(auto, 350px);
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.donation-info {
+  font-size: 22px;
+}
+
+.donation-info label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.donation-info label span {
+  color: $background-color;
+}
+
+.donation-info progress {
+  width: 100%;
+  height: 50px;
+}
+
+.donation-now-amount {
+  color: $required-amount;
+}
+
+@media (max-width: 960px) {
+  .need-help-page__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .need-help-page__photo-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    order: -1;
+    margin-bottom: 30px;
+  }
+}

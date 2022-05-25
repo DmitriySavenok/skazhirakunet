@@ -1,0 +1,58 @@
+.they-need-help-section {
+  padding-bottom: 80px;
+}
+
+.they-need-help-section__grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+.they-need-help-section__card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: white;
+  filter: drop-shadow(0 4px 6px rgba(0 0 0 / 12%));
+}
+
+.they-need-help-section__card-photo-block {
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.they-need-help-section__card-img {
+  width: 100%;
+  height: auto;
+}
+
+.they-need-help-section__card-head,
+.they-need-help-section__card-diagnosis-block {
+  margin: 16px 0;
+}
+
+.they-need-help-section__card-diagnosis-block {
+  margin-top: 0;
+}
+
+.they-need-help-section__card-name,
+.they-need-help-section__card-diagnosis {
+  margin-right: 6px;
+}
+
+.they-need-help-section__card-name,
+.they-need-help-section__card-age,
+.they-need-help-section__card-diagnosis,
+.they-need-help-section__card-diagnosis-text {
+  display: inline;
+}
+
+.they-need-help-section__card-diagnosis {
+  color: $background-color;
+}
+
+@media (max-width: 600px) {
+  .they-need-help-section__grid {
+    grid-template-columns: 1fr;
+  }
+}
