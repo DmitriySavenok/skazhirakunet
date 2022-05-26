@@ -21,6 +21,10 @@
   padding-left: 16px;
 }
 
+.sber-qr__instruction-list li {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 650px) {
   .requisites-page-content__sber-qr {
     display: block;

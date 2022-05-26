@@ -1,0 +1,43 @@
+//- Перемнные
+block need-help-page-vars
+  - var titleName; //- Переменная которая хранит заголовок страницы (Имя)
+  - var requiredAmount; //- Переменная которая хранит заголовок страницы (Имя)
+  - var donatedNow; //- Переменная которая хранит заголовок страницы (Имя)
+
+section.need-help-page__section
+  .container
+    h2 #{titleName}
+    .need-help-page__grid
+      .need-help-page__info-block
+        block need-help-info
+
+        .donation-info
+          label(for="donation") Необходимая сумма: <span>#{requiredAmount}</span> рублей.
+          progress(id=donation max=requiredAmount value=donatedNow)
+          p.donation-info__now Собрано: <span class="donation-now-amount">#{donatedNow}</span> рублей.
+
+        .need-help-page__requisites
+          .requisites-page-content__sberbank
+            .requisites-page-content__sber-info
+              p.requisites-page-content__text <b>ПАО Сбербанк<br>117997, Москва, ул. Вавилова, 19</b>
+              p.requisites-page-content__text Наименование операционного отделения: Дополнительный офис №8605/0214
+              p.requisites-page-content__text Местонахождение опер. подразделения: 243140, г. Клинцы, ул. Октябрьская, 19
+              p.requisites-page-content__text БИК Банка получателя: 041501601
+              p.requisites-page-content__text Счет № банка получателя: 30101810400000000601 в ОТДЕЛЕНИЕ БРЯНСК
+              p.requisites-page-content__text ИНН 7707083893
+              p.requisites-page-content__text КПП 325702001
+              p.requisites-page-content__text.requisites-page-content__fond-name Благотворительынй фонд "Скажи раку-нет!"
+              p.requisites-page-content__text <b>р/сч 40703810508000000614</b>
+              p.requisites-page-content__text <b>инн 3241017983</b>
+            h3 QR-код для перевода через мобильное приложение
+            .requisites-page-content__sber-qr
+              .sber-qr__images-block
+                img(class="sber-qr__img" src="img/qr.png", alt="qr-код для перевода на счет сбербанка")
+              .sber-qr__instruction
+                <ol class="sber-qr__instruction-list">
+                  <li>Откройте приложение вашего мобильного банка <br>(Сбербанк, Тинькоф, Альфа-Банк, ВТБ и пр.)</li>
+                  <li>Отсканируйте QR-код с экрана</li>
+                  <li>Укажите сумму пожертвования</li>
+                </ol>
+      .need-help-page__photo-block
+        block need-help-photo

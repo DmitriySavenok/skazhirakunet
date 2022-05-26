@@ -8,12 +8,16 @@ let headerContent = document.querySelector("#header__content");
 function needHelpButtonHref() {
   let needHelpButton = document.querySelector("#need-help-button");
   let lifeStoriesButton = document.querySelector("#life-stories-button");
+  let theyNeedHelpButton = document.querySelector("#they-need-help-button");
 
   if (body.classList.contains('index-body') == true) {
     needHelpButton.href="#contact-us";
   }
   if (body.classList.contains('index-body') == true) {
     lifeStoriesButton.href="#life-stories-section";
+  }
+  if (body.classList.contains('index-body') == true) {
+    theyNeedHelpButton.href="#they-need-help-section";
   }
 }
 
